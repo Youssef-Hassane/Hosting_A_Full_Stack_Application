@@ -15,7 +15,7 @@
     "deployA": "npm run build && eb list && eb use udagram-api-dev && eb deploy && eb setenv DATABASE_PORT=$DATABASE_PORT POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT AWS_REGION=$AWS_REGION AWS_PROFILE=$AWS_PROFILE AWS_BUCKET=$AWS_BUCKET URL=$URL JWT_SECRET=$JWT_SECRET",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy":"chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
