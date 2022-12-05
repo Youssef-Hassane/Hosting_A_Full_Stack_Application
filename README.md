@@ -1,6 +1,30 @@
 # Hosting a Full-Stack Application
 
-### **You can use you own project completed in previous courses or use the provided Udagram app for completing this final project.**
+Infrastructure
+
+![Screenshot1](https://github.com/Youssef-Hassane/Screenshot-3/blob/main/ScreenShot_2.png)
+
+Continuous Integration And Continuous Deployment (CI/CD) Pipeline
+
+![Screenshot2](https://github.com/Youssef-Hassane/Screenshot-3/blob/main/ScreenShot_1.png)
+
+Environment Variables In The CircleCI:
+```
+POSTGRES_HOST=$POSTGRES_HOST
+POSTGRES_USERNAME=$POSTGRES_USERNAME
+POSTGRES_DB=$POSTGRES_DB
+POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+DATABASE_PORT=$DATABASE_PORT
+PORT=$PORT
+URL=$URL
+JWT_SECRET=$JWT_SECRET
+AWS_REGION=$AWS_REGION
+AWS_PROFILE=$AWS_PROFILE
+AWS_BUCKET=$AWS_BUCKET
+AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
+```
 
 ---
 
