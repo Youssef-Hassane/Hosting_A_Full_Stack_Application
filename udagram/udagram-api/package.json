@@ -3,16 +3,19 @@
   "version": "2.0.0",
   "description": "",
   "main": "server.ts",
+  "engines": {
+    "node": "14.15.0"
+  },
   "scripts": {
     "start": "node ./server.js",
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev --respawn --transpileOnly ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deployA": "npm run build && eb list && eb use udagram-api-dev && eb deploy && eb setenv DATABASE_PORT=$DATABASE_PORT POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT AWS_REGION=$AWS_REGION AWS_PROFILE=$AWS_PROFILE AWS_BUCKET=$AWS_BUCKET URL=$URL JWT_SECRET=$JWT_SECRET",
+    "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy && eb setenv DATABASE_PORT=$DATABASE_PORT POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT AWS_REGION=$AWS_REGION AWS_PROFILE=$AWS_PROFILE AWS_BUCKET=$AWS_BUCKET URL=$URL JWT_SECRET=$JWT_SECRET",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    "deploy:setenv": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
@@ -30,8 +33,8 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
-    "sequelize": "^6.26.0",
-    "sequelize-typescript": "^2.1.3"
+    "sequelize": "^5.3.5",
+    "sequelize-typescript": "^0.6.11"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
