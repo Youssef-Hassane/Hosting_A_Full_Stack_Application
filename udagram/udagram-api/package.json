@@ -17,6 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:setenv": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
   },
+  
   "keywords": [],
   "author": "Gabriel Ruttner",
   "license": "ISC",
