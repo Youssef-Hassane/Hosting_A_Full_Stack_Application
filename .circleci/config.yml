@@ -82,7 +82,7 @@ jobs:
 workflows:
   udagram:
     jobs:
-      - build
+      - build:
           filters:
             branches:
               only:
@@ -90,7 +90,7 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy
+      - deploy:
           filters:
             branches:
               only:
