@@ -79,8 +79,6 @@ After that I went to the console to add the bucket policy:
 
 ---
 
----
-
 ## CircleCI
 
 Watch the below short video:
