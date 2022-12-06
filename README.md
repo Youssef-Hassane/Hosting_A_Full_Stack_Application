@@ -2,6 +2,8 @@
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Youssef-Hassane/Hosting_A_Full_Stack_Application/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Youssef-Hassane/Hosting_A_Full_Stack_Application/tree/main)
 
+http://my-bucket-0612.s3-website-us-east-1.amazonaws.com
+
 ## How I have created the Database:
 
 Watch the below short video:
