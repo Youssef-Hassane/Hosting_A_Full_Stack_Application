@@ -18,7 +18,6 @@ Watch the below short video:
 cd Desktop/Hosting_A_Full_Stack_Application/udagram/udagram-api/
 eb init udagram-api
 eb create udagram-api-dev
--
 ```
 
 ### deployment
@@ -38,7 +37,7 @@ eb setenv POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POST
 
 ---
 
-## How I have created the Amazon Simple Storage Service (Amazon S3)::
+## How I have created the Amazon Simple Storage Service (Amazon S3):
 
 ```
 cd Desktop/Hosting_A_Full_Stack_Application/udagram/udagram-frontend
