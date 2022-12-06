@@ -4,6 +4,7 @@
 
 Watch the below short video:
 
+[![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/HV2yUIixgaM/0.jpg)](https://www.youtube.com/watch?v=HV2yUIixgaM)
 
 Watch the below short video:
 
