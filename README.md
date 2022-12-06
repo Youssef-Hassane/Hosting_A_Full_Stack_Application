@@ -1,14 +1,76 @@
 # Hosting a Full-Stack Application
 
+## How I have created the Database:
+
+---
+
+## How I have created the Elastic Beanstalk:
+
+```
+cd Desktop/Hosting_A_Full_Stack_Application/udagram/udagram-api/
+eb init udagram-api
+eb create udagram-api-dev
+```
+
+### deployment
+
+- Firstly, I have created folder called bin
+- Secondly, I have created file called deploy.sh
+- Thirdly, I added the following in the deploy.sh file
+
+```
+eb list
+eb use udagram-api-dev
+eb deploy udagram-api-dev
+eb setenv POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWORD=$POSTGRES_PASSWORD DATABASE_PORT=$DATABASE_PORT PORT=$PORT URL=$URL JWT_SECRET=$JWT_SECRET AWS_REGION=$AWS_REGION AWS_PROFILE=$AWS_PROFILE AWS_BUCKET=$AWS_BUCKET AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
+```
+
+- Fourthly, I have added new script called "deploy:sh" and modified the "start" and the "deploy" script of the package.json that is located in the “udagram-api” folder.
+
+---
+
+## How I have created the Amazon Simple Storage Service (Amazon S3):
+
+```
+cd Desktop/Hosting_A_Full_Stack_Application/udagram/udagram-frontend
+aws s3api create-bucket --bucket my-bucket-0612 --region us-east-1
+aws s3 cp --recursive --acl public-read ./www s3://my-bucket-0612/
+aws s3 website s3://my-bucket-0612/ --index-document index.html --error-document index.html
+```
+
+After that I went to the console to add the bucket policy:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-bucket-0612/*"
+        }
+    ]
+}
+```
+
+---
+
 ## Infrastructure
 
 ![Screenshot1](https://github.com/Youssef-Hassane/Screenshot-3/blob/main/ScreenShot_2.png)
+
+---
 
 ## Continuous Integration And Continuous Deployment (CI/CD) Pipeline
 
 ![Screenshot2](https://github.com/Youssef-Hassane/Screenshot-3/blob/main/ScreenShot_1.png)
 
+---
+
 Environment Variables In The CircleCI:
+
 ```
 POSTGRES_HOST=$POSTGRES_HOST
 POSTGRES_USERNAME=$POSTGRES_USERNAME
