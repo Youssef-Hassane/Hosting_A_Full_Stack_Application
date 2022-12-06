@@ -2,6 +2,10 @@
 
 ## How I have created the Database:
 
+[![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/HV2yUIixgaM/0.jpg)](https://www.youtube.com/watch?v=HV2yUIixgaM)
+
+[![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/h8oVvGkekU4/0.jpg)](https://www.youtube.com/watch?v=h8oVvGkekU4)
+
 ---
 
 ## How I have created the Elastic Beanstalk:
@@ -10,6 +14,7 @@
 cd Desktop/Hosting_A_Full_Stack_Application/udagram/udagram-api/
 eb init udagram-api
 eb create udagram-api-dev
+-
 ```
 
 ### deployment
@@ -68,6 +73,12 @@ After that I went to the console to add the bucket policy:
 ![Screenshot2](https://github.com/Youssef-Hassane/Screenshot-3/blob/main/ScreenShot_1.png)
 
 ---
+
+---
+
+## CircleCI
+
+[![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/My8ePS93Ci8/0.jpg)](https://www.youtube.com/watch?v=My8ePS93Ci8)
 
 Environment Variables In The CircleCI:
 
