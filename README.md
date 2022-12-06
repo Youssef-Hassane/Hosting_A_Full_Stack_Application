@@ -1,6 +1,6 @@
 # Hosting a Full-Stack Application
 
-## How I have created the Database :
+## How I have created the Database:
 
 Watch the below short video:
 
