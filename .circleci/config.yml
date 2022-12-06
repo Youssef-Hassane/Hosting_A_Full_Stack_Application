@@ -24,7 +24,7 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
-      # TODO: Install dependencies in the the backend API
+      # TODO:  Install dependencies in the the backend API
       # Installing the dependencies in the backend API ("api:install": "cd udagram/udagram-api && npm install ."):
       #        npm run api:install
       - run:
