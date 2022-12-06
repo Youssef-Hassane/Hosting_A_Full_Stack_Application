@@ -2,7 +2,11 @@
 
 ## How I have created the Database:
 
+Watch the below short video:
+
 [![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/HV2yUIixgaM/0.jpg)](https://www.youtube.com/watch?v=HV2yUIixgaM)
+
+Watch the below short video:
 
 [![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/h8oVvGkekU4/0.jpg)](https://www.youtube.com/watch?v=h8oVvGkekU4)
 
@@ -77,6 +81,8 @@ After that I went to the console to add the bucket policy:
 ---
 
 ## CircleCI
+
+Watch the below short video:
 
 [![Build-A-Storefront-Backend-v2](https://img.youtube.com/vi/My8ePS93Ci8/0.jpg)](https://www.youtube.com/watch?v=My8ePS93Ci8)
 
