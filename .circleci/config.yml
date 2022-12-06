@@ -39,6 +39,7 @@ jobs:
           name: Front-End Lint
           command: |
             echo "TODO: Lint the frontend"
+            npm run frontend:lint
       # TODO: Build the frontend app
       # Building the frontend app ("frontend:build": "cd udagram/udagram-frontend && npm run build"):
       - run:
