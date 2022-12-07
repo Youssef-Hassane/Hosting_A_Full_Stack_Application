@@ -66,7 +66,7 @@ jobs:
       - checkout
       - run:
           name: Deploy App
-          # TODO: Install, build, deploy in both apps
+          # TODO: Install, build, deploy in both appss
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run deploy
