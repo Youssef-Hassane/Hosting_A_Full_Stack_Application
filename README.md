@@ -24,7 +24,7 @@ eb init udagram-api
 eb create udagram-api-dev
 ```
 
-### deployment
+### Deployment
 
 - Firstly, I have created folder called bin
 - Secondly, I have created file called deploy.sh
