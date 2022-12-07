@@ -12,6 +12,8 @@
 
 - The updates will be deployed to AWS once the app has successfully completed the build and deploy script's steps.
 
-# The Continuous Integration And Continuous Deployment (CI/CD) Pipeline Diagram"
+---
+
+# The Continuous Integration And Continuous Deployment (CI/CD) Pipeline Diagram:
 
 ![Screenshot2](https://github.com/Youssef-Hassane/Screenshot-3/blob/main/ScreenShot_1.png)
