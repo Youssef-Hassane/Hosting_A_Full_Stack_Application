@@ -67,16 +67,8 @@ jobs:
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
-          # npm run frontend:install
-          # npm run api:install
-          # npm run frontend:build
-          # npm run api:build
           command: |
             echo "# TODO: Install, build, deploy in both apps"
-            npm run frontend:install
-            npm run api:install
-            npm run frontend:build
-            npm run api:build
             npm run deploy
 
 workflows:
@@ -91,12 +83,6 @@ workflows:
           type: approval
           requires:
             - build
-      - deploy
-      - hold:
-          filters:
-            branches:
-              only:
-                - master
-          type: approval
+      - deploy:
           requires:
-            - deploy
+            - hold
